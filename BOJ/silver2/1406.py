@@ -21,9 +21,11 @@ for _ in range(m):
     elif ops[0] == "D":
         if r:
             l.append(r.popleft())
+    # 커서의 왼쪽 문자 삭제 -> l에서 마지막 문자 삭제
     elif ops[0] == "B":
         if l:
             l.pop()
+    # 커서 오른쪽에 문자 추가 -> l에 append
     else:
         l.append(ops[-1])
 
