@@ -2,7 +2,6 @@ dirs = {"N": (-1, 0), "E": (0, 1), "S": (1, 0), "W": (0, -1)}
 
 
 def solution(park, routes):
-    answer = []
     sx, sy = 0, 0
     r = len(park)
     c = len(park[0])
