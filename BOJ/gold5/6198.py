@@ -23,6 +23,5 @@ for i in range(n):
     # 스택에 있는 빌딩은 스택 0번째 빌딩이
     # 볼 수 있는 빌딩
     result += len(st) - 1
-    print(st)
 
 print(result)
