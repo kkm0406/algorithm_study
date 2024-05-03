@@ -11,7 +11,7 @@ g = {}
 for i in range(q):
     tmp = input().split()
     num, name, k, c = int(tmp[0]), tmp[1], int(tmp[2]), tmp[3:]
-    if num == 1: # 딕셔너리에 데이터 추가
+    if num == 1:  # 딕셔너리에 데이터 추가
         # 이름 없으면
         if name not in g:
             # 우선순위큐에 넣어서
@@ -29,7 +29,7 @@ for i in range(q):
             # 하나씩 pop하면서 가치를 더함
             for j in range(k):
                 if g[name]:
-                    val = -1*heapq.heappop(g[name])
+                    val = -1 * heapq.heappop(g[name])
                     value += val
                 # pop할 값이 없으면 바로 반복문 종료
                 else:
@@ -37,6 +37,4 @@ for i in range(q):
         else:
             continue
 
-
 print(value)
-
