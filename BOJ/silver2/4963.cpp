@@ -50,6 +50,7 @@ int bfs(int r, int c) {
 		}
 	}
 
+	
 	return 1;
 }
 int main() {
@@ -72,8 +73,6 @@ int main() {
 		}
 
 		printf("%d\n", cnt);
-
-
 	}
 
 	return 0;
