@@ -26,7 +26,7 @@ for idx, h in enumerate(buildings):
         if slope < slope_l: # 기울기가 더 작다면 관측 가능
             slope_l = slope
             cnt += 1
-
+    # 현재 건물 오른쪽 탐색
     for i in range(idx + 1, n):
         slope = get_slope(idx + 1, h, i + 1, buildings[i])
         if slope > slope_r: # 기울기가 더 크다면 관측 가능
