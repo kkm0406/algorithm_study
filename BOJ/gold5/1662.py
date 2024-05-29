@@ -17,10 +17,10 @@ for i in range(len(s)):
         cnt = 0
     elif s[i] == ")":
         prev_len, prev_num = idx.pop()
-        # 해당 개수만큼 곱하고 이전까지의 길이 더함
+        # ()안의 문자열 길이 * 곱해야할 값 + 이전까지의 길이
         cnt = cnt * prev_num + prev_len
     else:
-        # 길이 + 1
+        # 길이 + 1 / () 안의 문자열 길이
         cnt += 1
         # 곱해야할 값
         num = int(s[i])
